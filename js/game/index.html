@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>The Guess Game</header>
+    <section>
+        <table>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+            <tr><td>31</td><td id="T1" onclick="call1()">YES</td><td id="F1">NO</td></tr>
+        </table>
+        <button onclick="start()">start</button>
+        <p id="add">hello : </p>
+    </section>
+    <section>
+        <table>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+            <tr><td>31</td><td id="T2" onclick="call2()">YES</td><td id="F2">NO</td></tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+            <tr><td>31</td><td id="T3" onclick="call3()">YES</td><td id="F3">NO</td></tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+            <tr><td>31</td><td id="T4" onclick="call4()">YES</td><td id="F4">NO</td></tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+            <tr><td>31</td><td id="T5" onclick="call5()">YES</td><td id="F5">NO</td></tr>
+        </table>
+    </section>
+</body>
+<script>
+    let a1=0,a2=0,a3=0,a4=0,a5=0;
+    function call1(){
+        a1=1;
+    }function call2(){
+        a2=1;
+    }function call3(){
+        a3=1;
+    }function call4(){
+        a4=1;
+    }function call5(){
+        a5=1;
+    }function start(){
+        let ans = Math.pow(a5,5)+Math.pow(a4,4)+Math.pow(a3,3)+Math.pow(a2,2)+Math.pow(a1,1);
+        document.getElementById("add").innerHTML += ans;
+    }
+</script>
+</html>
